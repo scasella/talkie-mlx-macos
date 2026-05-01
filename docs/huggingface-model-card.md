@@ -38,8 +38,8 @@ developed by **Alec Radford, Nick Levine, and David Duvenaud**. Talkie was
 pretrained on 260B tokens of pre-1931 English-language text and
 instruction-tuned with a dataset extracted from vintage reference works,
 including etiquette manuals, encyclopedias, letter-writing guides, and poetry
-collections. The instruction model also used reinforcement learning via online
-DPO with an LLM-as-a-judge to improve instruction following.
+collections. The instruction model also used reinforcement learning via online DPO
+with an LLM-as-a-judge to improve instruction following.
 
 Read more in the [Talkie report](https://talkie-lm.com).
 
