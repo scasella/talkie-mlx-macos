@@ -10,6 +10,10 @@ It uses a q4-safe MLX checkpoint published at
 [`scasella91/talkie-1930-13b-it-MLX-q4`](https://huggingface.co/scasella91/talkie-1930-13b-it-MLX-q4)
 and keeps all inference local on your Mac.
 
+<p align="center">
+  <img src="Assets/AppIcon.png" alt="Talkie Cabinet app icon" width="128">
+</p>
+
 ![Talkie Cabinet screenshot](Screenshots/talkie-cabinet-listening-bureau.png)
 
 ## What You Get
@@ -19,7 +23,7 @@ and keeps all inference local on your Mac.
 - Prompt slips, payload preview, context meter, retry/stop controls, and a signal inspector.
 - A model setup script that downloads the MLX q4 checkpoint into
   `~/Library/Application Support/Talkie Cabinet`.
-- Signed and notarized release DMG for `v0.1.0`.
+- Release packaging scripts for signed and notarized DMG builds.
 
 ## Requirements
 

@@ -13,7 +13,7 @@ __pycache__/
 *.log
 
 .venv/
-Models/
+/Models/
 *.safetensors
 *.bin
 *.pt
