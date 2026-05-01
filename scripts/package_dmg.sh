@@ -84,7 +84,7 @@ if [[ "$NOTARIZE" == "1" ]]; then
   xcrun stapler validate "$DMG"
 fi
 
-shasum -a 256 "$DMG" > "$DMG.sha256"
+(cd "$RELEASE_DIR" && shasum -a 256 "$(basename "$DMG")") > "$DMG.sha256"
 
 if [[ "$NOTARIZE" == "1" ]]; then
   spctl --assess --type execute --verbose=4 "$APP_BUNDLE"
