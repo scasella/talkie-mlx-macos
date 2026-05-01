@@ -1,0 +1,21 @@
+name: Release Checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  swiftpm:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Swift build
+        run: swift build
+
+      - name: Python worker syntax
+        run: python3 -m py_compile Sources/TalkieCabinet/Resources/talkie_mlx_server.py
