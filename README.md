@@ -41,7 +41,9 @@ and keeps all inference local on your Mac.
 3. In Terminal, prepare the local MLX environment and model:
 
    ```bash
-   ./scripts/download_model.sh
+   curl -fsSLo /tmp/talkie-download-model.sh \
+     https://raw.githubusercontent.com/scasella/talkie-mlx-macos/main/scripts/download_model.sh
+   bash /tmp/talkie-download-model.sh
    ```
 
 4. Open **Talkie Cabinet** from Applications.
@@ -149,6 +151,10 @@ ornament, giant brand panels, and dashboard card clutter.
 codesign --verify --deep --strict --verbose=2 "dist/Talkie Cabinet.app"
 spctl --assess --type execute --verbose=4 "dist/Talkie Cabinet.app"
 xcrun stapler validate "release/Talkie-Cabinet-v0.1.0.dmg"
+spctl --assess --type open \
+  --context context:primary-signature \
+  --verbose=4 \
+  "release/Talkie-Cabinet-v0.1.0.dmg"
 ```
 
 ## Status

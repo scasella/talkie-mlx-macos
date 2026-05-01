@@ -15,8 +15,9 @@ running Talkie 1930 13B locally on Apple Silicon.
 
 1. Download the DMG.
 2. Drag **Talkie Cabinet.app** to Applications.
-3. Run `./scripts/download_model.sh` once to install the MLX Python environment
-   and model under `~/Library/Application Support/Talkie Cabinet`.
+3. Run the setup command in the README once to install the MLX Python
+   environment and model under
+   `~/Library/Application Support/Talkie Cabinet`.
 4. Open Talkie Cabinet.
 
 ## Validation
