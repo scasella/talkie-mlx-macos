@@ -16,6 +16,20 @@ and keeps all inference local on your Mac.
 
 ![Talkie Cabinet screenshot](Screenshots/talkie-cabinet-listening-bureau.png)
 
+## Credit To Talkie
+
+This app and MLX checkpoint are community packaging around
+`talkie-1930-13b-it`, a 13B-parameter instruction-tuned model from the
+[`talkie`](https://github.com/talkie-lm/talkie) family developed by
+**Alec Radford, Nick Levine, and David Duvenaud**. Talkie was pretrained on
+260B tokens of pre-1931 English-language text and instruction-tuned with a
+dataset extracted from vintage reference works, including etiquette manuals,
+encyclopedias, letter-writing guides, and poetry collections. The instruction
+model also used reinforcement learning via online DPO with an LLM-as-a-judge
+to improve instruction following.
+
+Read more in the [Talkie report](https://talkie-lm.com).
+
 ## What You Get
 
 - **Talkie Cabinet**, a SwiftUI chat app shaped as a native Mac “Listening Bureau.”
@@ -166,4 +180,4 @@ requires Apple Silicon, local disk space, and the model download.
 ## License
 
 Apache-2.0. This repo preserves attribution to the source Talkie model and the
-original Talkie project.
+original Talkie project by Alec Radford, Nick Levine, and David Duvenaud.

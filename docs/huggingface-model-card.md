@@ -30,6 +30,19 @@ This is not an official Talkie release. It is a Mac-oriented companion to the
 browser/WebGPU ONNX release:
 [`scasella91/talkie-1930-13b-it-ONNX`](https://huggingface.co/scasella91/talkie-1930-13b-it-ONNX).
 
+## Credit To Talkie
+
+This repo packages `talkie-1930-13b-it`, a 13B-parameter instruction-tuned
+language model from the [`talkie`](https://github.com/talkie-lm/talkie) family
+developed by **Alec Radford, Nick Levine, and David Duvenaud**. Talkie was
+pretrained on 260B tokens of pre-1931 English-language text and
+instruction-tuned with a dataset extracted from vintage reference works,
+including etiquette manuals, encyclopedias, letter-writing guides, and poetry
+collections. The instruction model also used reinforcement learning via online
+DPO with an LLM-as-a-judge to improve instruction following.
+
+Read more in the [Talkie report](https://talkie-lm.com).
+
 ## Files
 
 The repo contains the MLX model shards plus the tokenizer/config/chat-template
@@ -75,6 +88,8 @@ The setup script downloads this repo to:
 
 ## Attribution
 
+- Original Talkie researchers: Alec Radford, Nick Levine, and David Duvenaud
+- Talkie report: [`talkie-lm.com`](https://talkie-lm.com)
 - Source model: [`lewtun/talkie-1930-13b-it-hf`](https://huggingface.co/lewtun/talkie-1930-13b-it-hf)
 - Original project: [`talkie-lm/talkie`](https://github.com/talkie-lm/talkie)
 - Mac app: [`scasella/talkie-mlx-macos`](https://github.com/scasella/talkie-mlx-macos)
